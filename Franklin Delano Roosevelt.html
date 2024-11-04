@@ -1,0 +1,235 @@
+
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Centro Educativo Franklin Delano Roosevelt, uno de los colegios más grandes de Puerto Cortés, Honduras. Ofrecemos varias carreras técnicas.">
+    <title>Centro Educativo Franklin Delano Roosevelt</title> 
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #1E90FF;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            text-align: center;
+            background-color: #333;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            display: inline-block;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+            cursor: pointer;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        main {
+            padding: 20px;
+        }
+        section {
+            display: none; /* Ocultamos las secciones por defecto */
+        }
+        h1 {
+            color: #333;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        .carreras {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .carrera {
+            background-color: white;
+            padding: 15px;
+            margin: 10px;
+            width: 300px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .detalle-carrera {
+            display: none;
+            background-color: #f4f4f4;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        button {
+            background-color: #1E90FF;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div style="display: flex; align-items: center; justify-content: center;">
+            <img src="logofdr.png" alt="logofdr" style="width: 80px; height: 80px; margin-right: 20px;">
+            <div>
+                <h1>Centro Educativo Franklin Delano Roosevelt</h1>
+                <p>Uno de los colegios más grandes de Puerto Cortés, Honduras</p>
+            </div>
+        </div>
+    </header>
+    
+
+<nav>
+    <a onclick="mostrarSeccion('inicio')">Inicio</a>
+    <a onclick="mostrarSeccion('carreras')">Carreras</a>
+    <a onclick="mostrarSeccion('nosotros')">Nosotros</a>
+    <a onclick="mostrarSeccion('contacto')">Contacto</a>
+    <a onclick="mostrarSeccion('Promoción 2024')">Promoción 2024</a>
+</nav>
+
+<main>
+    <section id="inicio">
+        <h2>Bienvenido al Centro Educativo Franklin Delano Roosevelt</h2>
+        <p>El Centro Educativo Franklin Delano Roosevelt se enorgullece de ser una de las instituciones más destacadas de Puerto Cortés, Honduras. Ofrecemos una formación técnica de alta calidad que prepara a nuestros estudiantes para enfrentarse a los retos del mundo laboral y académico.</p>
+        <p>Contamos con un cuerpo docente altamente capacitado, infraestructura moderna y un enfoque educativo orientado hacia el desarrollo integral de nuestros estudiantes. Nuestro objetivo es no solo brindar conocimientos técnicos, sino también fomentar valores como la responsabilidad, el trabajo en equipo y el liderazgo.</p>
+        <p>Desde su fundación, el Centro Educativo Franklin Delano Roosevelt ha sido pionero en ofrecer programas técnicos de vanguardia en áreas como Informática, Contaduría, Construcciones Metálicas y Administración de Empresas. Nos esforzamos en mantenernos a la par de las tendencias tecnológicas y laborales, asegurando que nuestros egresados sean competitivos en el mercado.</p>
+        <p>Te invitamos a conocer más sobre nuestras carreras técnicas y cómo podemos ayudarte a alcanzar tus metas profesionales.</p>
+        <h2>Video Institucional</h2>
+<video width="640" height="480" controls>
+    <source src="BTPINFORMATICA.mp4" type="video/mp4">
+    Tu navegador no soporta la etiqueta de video.
+</video>
+    </section>
+    
+    <section id="carreras">
+        <h2>Nuestras Carreras Técnicas</h2>
+        <div class="carreras">
+            <div class="carrera">
+                <h3>Informática</h3>
+                <p>La carrera de Informática te prepara para un futuro en el desarrollo de software, redes y tecnologías de la información.</p>
+                <button onclick="mostrarDetalles('detalle-informatica')">Más información</button>
+                <div id="detalle-informatica" class="detalle-carrera">
+                    <p>El programa de Informática cubre áreas como la programación, diseño de bases de datos, desarrollo web, ciberseguridad, redes y más. Los egresados tienen habilidades para diseñar, implementar y administrar soluciones tecnológicas.</p>
+                </div>
+            </div>
+            <div class="carrera">
+                <h3>Contaduría y Finanzas</h3>
+                <p>Enfocada en la gestión financiera y contable, ideal para aquellos interesados en el mundo de los negocios y las finanzas.</p>
+                <button onclick="mostrarDetalles('detalle-contaduria')">Más información</button>
+                <div id="detalle-contaduria" class="detalle-carrera">
+                    <p>La carrera de Contaduría y Finanzas abarca contabilidad, análisis financiero, auditoría, y planificación financiera. Los graduados están capacitados para trabajar en empresas, bancos y consultoras, gestionando recursos y tomando decisiones financieras clave.</p>
+                </div>
+            </div>
+            <div class="carrera">
+                <h3>Construcciones Metálicas</h3>
+                <p>Prepara a los estudiantes para trabajar en el diseño, construcción y mantenimiento de estructuras metálicas.</p>
+                <button onclick="mostrarDetalles('detalle-construcciones')">Más información</button>
+                <div id="detalle-construcciones" class="detalle-carrera">
+                    <p>Esta carrera incluye el estudio de materiales metálicos, técnicas de soldadura, dibujo técnico, y diseño de estructuras. Los egresados pueden trabajar en la industria de la construcción, fabricación y mantenimiento de infraestructuras.</p>
+                </div>
+            </div>
+            <div class="carrera">
+                <h3>Administración de Empresas</h3>
+                <p>Forma a los futuros líderes empresariales con habilidades en la gestión de organizaciones, planificación y toma de decisiones.</p>
+                <button onclick="mostrarDetalles('detalle-admin')">Más información</button>
+                <div id="detalle-admin" class="detalle-carrera">
+                    <p>La carrera de Administración de Empresas ofrece formación en gestión de recursos humanos, finanzas, marketing, y planificación estratégica. Los egresados son capaces de dirigir equipos y gestionar organizaciones de manera eficiente y ética.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>El Centro Educativo Franklin Delano Roosevelt, fundado en 1981, es una de las instituciones más grandes y reconocidas en Puerto Cortés, Honduras. Desde su oficialización, nos hemos dedicado a ofrecer educación técnica y académica de alta calidad, con el objetivo de formar a las futuras generaciones de profesionales y líderes.</p>
+        <p>Como institución pública, el Centro Educativo Franklin Delano Roosevelt está comprometido con garantizar el acceso a una educación inclusiva, gratuita y de calidad para todos los estudiantes de la comunidad. A lo largo de los años, hemos mantenido altos estándares educativos y un ambiente propicio para el aprendizaje y el desarrollo personal.</p>
+        <p>Nuestro campus cuenta con tres edificios bien equipados que albergan aulas modernas, laboratorios especializados, salas de informática y talleres técnicos, lo que nos permite ofrecer una experiencia educativa integral. Estas instalaciones están diseñadas para apoyar el aprendizaje práctico y teórico de los estudiantes, brindándoles las herramientas necesarias para triunfar en sus áreas de estudio.</p>
+        <p>El colegio se destaca no solo por su infraestructura, sino también por su enfoque en la excelencia académica y la preparación técnica. Nuestros programas abarcan carreras como Informática, Contaduría y Finanzas, Construcciones Metálicas, y Administración de Empresas. Además, trabajamos en estrecha colaboración con empresas locales e instituciones de educación superior para garantizar que nuestros egresados estén listos para enfrentar los retos del mercado laboral.</p>
+        <p>A lo largo de las décadas, hemos ganado un lugar destacado en la comunidad gracias a nuestro compromiso con la educación y el desarrollo integral de los estudiantes. Nuestro enfoque en la innovación, junto con una sólida base de valores, nos permite seguir siendo una institución líder en el ámbito educativo de la región.</p>
+    </section>  
+
+
+    <section id="Promoción 2024">
+        <h2>Bienvenido al Centro Educativo Franklin Delano Roosevelt</h2>
+        <p>El Centro Educativo Franklin Delano Roosevelt se enorgullece de ser una de las instituciones más destacadas de Puerto Cortés, Honduras. Ofrecemos una formación técnica de alta calidad que prepara a nuestros estudiantes para enfrentarse a los retos del mundo laboral y académico.</p>
+        <p>Contamos con un cuerpo docente altamente capacitado, infraestructura moderna y un enfoque educativo orientado hacia el desarrollo integral de nuestros estudiantes. Nuestro objetivo es no solo brindar conocimientos técnicos, sino también fomentar valores como la responsabilidad, el trabajo en equipo y el liderazgo.</p>
+        <h3>Promoción 2024</h3> <img src="promo24.jpg" alt="promo24" style="width: 200px; height: 200px; margin-right: 60px;"> <img src="promo23.jpg" alt="promo23" style="width: 200px; height: 200px; margin-right: 60px;"><img src="promo22.jpg" alt="promo22" style="width: 200px; height: 200px; margin-right: 60px;"> 
+        <div>
+        <p>Nos complace anunciar que la Promoción 2024 del Centro Educativo Franklin Delano Roosevelt está compuesta por un grupo excepcional de jóvenes talentosos y dedicados. Estos estudiantes han demostrado su compromiso con el aprendizaje, superando desafíos y destacándose en diversas áreas académicas y técnicas.</p>
+        <p>Los graduados de la Promoción 2024 están preparados para afrontar los desafíos del futuro, con habilidades técnicas y humanas que los convertirán en líderes en sus respectivas áreas de estudio. Estamos orgullosos de haber sido parte de su formación y les deseamos el mayor de los éxitos en sus futuras carreras y proyectos.</p>
+    </section>
+    
+    <section id="contacto">
+        <h2>Contáctanos</h2>
+        <p>En el Centro Educativo Franklin Delano Roosevelt, estamos siempre dispuestos a escuchar y responder cualquier pregunta o inquietud que puedas tener. Ya sea que desees obtener más información sobre nuestras carreras técnicas, nuestros procesos de admisión, o simplemente quieras conocer más sobre nuestras actividades académicas y extracurriculares, estamos aquí para ayudarte.</p>
+        <p>Si deseas comunicarte con nosotros, puedes hacerlo a través de los siguientes medios:</p>
+        <ul>
+            <li><strong>Correo Electrónico:</strong> Puedes escribirnos a <a href="mailto:contacto@roosevelt.edu.hn">contacto@roosevelt.edu.hn</a>. Nuestro equipo se encargará de responderte a la brevedad posible.</li>
+            <li><strong>Teléfono:</strong> También puedes llamarnos al número (+504) 1234-5678 durante nuestro horario de atención, de lunes a viernes, de 8:00 a.m. a 4:00 p.m.</li>
+            <li><strong>Visítanos:</strong> Si prefieres una atención personalizada, te invitamos a visitarnos en nuestras instalaciones ubicadas en el corazón de Puerto Cortés. Nuestro personal administrativo estará encantado de asistirte y brindarte toda la información que necesites sobre nuestra oferta educativa y las actividades que realizamos.</li>
+        </ul>
+        <p>Además, puedes seguirnos en nuestras redes sociales para mantenerte al día con las últimas noticias, eventos y actividades del colegio. Somos activos en las plataformas más populares para asegurarnos de que nuestra comunidad esté siempre informada y conectada:</p>
+        <ul>
+            <li><strong>Facebook:</strong> <a href="#">https://www.facebook.com/FDR1945?mibextid=ZbWKwL</a></li>
+        </ul>
+        <p>No dudes en comunicarte con nosotros para cualquier consulta. Tu futuro académico es nuestra prioridad, y estamos aquí para ayudarte en cada paso de tu camino educativo.</p>
+    </section>
+    
+</main>
+
+<footer>
+    <p>&copy; 2024 Centro Educativo Franklin Delano Roosevelt - Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    // Función para mostrar la sección correspondiente y ocultar las demás
+    function mostrarSeccion(id) {
+        // Ocultamos todas las secciones
+        var secciones = document.querySelectorAll('main section');
+        secciones.forEach(function(section) {
+            section.style.display = 'none';
+        });
+        
+        // Mostramos solo la sección seleccionada
+        var seccionSeleccionada = document.getElementById(id);
+        if (seccionSeleccionada) {
+            seccionSeleccionada.style.display = 'block';
+        }
+    }
+
+    // Mostrar la sección "Inicio" por defecto al cargar la página
+    document.addEventListener('DOMContentLoaded', function() {
+        mostrarSeccion('inicio');
+    });
+
+    // Función para mostrar los detalles de una carrera técnica
+    function mostrarDetalles(id) {
+        var detalles = document.getElementById(id);
+        if (detalles.style.display === "none" || detalles.style.display === "") {
+            detalles.style.display = "block";
+        } else {
+            detalles.style.display = "none";
+        }
+    }
+</script>
+
+</body>
+</html>
